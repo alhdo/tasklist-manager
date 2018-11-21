@@ -1,0 +1,13 @@
+.toolbar{
+    -fx-background-color: #243A51 ;
+}
+
+.jfx-hamburger-icon{
+    -fx-spacing: 4px;
+}
+
+.jfx-hamburger StackPane{
+    -fx-background-color: #ffffff;
+    -fx-pref-width: 30px;
+    -fx-background-radius: 5px;
+}

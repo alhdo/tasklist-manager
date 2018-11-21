@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane fx:id="mainStackPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="760.0" prefWidth="1200.0">
+         <children>
+            <JFXDrawer fx:id="drawer" layoutY="60.0" prefHeight="700.0" prefWidth="150.0" />
+            <JFXToolbar fx:id="toolbar" prefHeight="60.0" prefWidth="1208.0" styleClass="toolbar">
+               <left>
+                  <JFXHamburger fx:id="hamburger" prefHeight="60.0" prefWidth="65.0" styleClass="jfx-hamburger" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets left="24.0" />
+                     </padding>
+                  </JFXHamburger>
+               </left>
+            </JFXToolbar>
+            <AnchorPane fx:id="contentPane" layoutX="8.0" layoutY="60.0" prefHeight="700.0" prefWidth="1200.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
