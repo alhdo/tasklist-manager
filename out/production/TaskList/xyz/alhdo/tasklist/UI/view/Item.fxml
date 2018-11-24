@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="695.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+   <children>
+      <Label fx:id="title" layoutX="14.0" layoutY="14.0" text="Title" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="description" layoutX="14.0" layoutY="42.0" maxHeight="35.0" maxWidth="500.0" prefHeight="35.0" prefWidth="500.0" text="Descripton" textFill="#9a9797" />
+      <Label fx:id="debut" layoutX="16.0" layoutY="78.0" text="Label" />
+      <Label fx:id="fin" layoutX="340.0" layoutY="78.0" text="Label" />
+      <Label fx:id="user" layoutX="596.0" layoutY="17.0" style="-fx-background-color: #464F67; -fx-background-radius: 3;" text="User" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

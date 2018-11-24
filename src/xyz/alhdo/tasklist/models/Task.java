@@ -82,8 +82,8 @@ public class Task {
         this.user = user;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        return this.getId() == ((Task) obj).getId();
-    }
+//    @Override
+//    public boolean equals(Object obj) {
+//        return this.getId() == ((Task) obj).getId();
+//    }
 }

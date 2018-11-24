@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="717a728c-4686-4139-a362-fe373ba0ecc5" name="Default Changelist" comment="" />
+    <list default="true" id="717a728c-4686-4139-a362-fe373ba0ecc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Box_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_GPS_Antenna_64px_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Home_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Meanpath_64px_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Open_Envelope_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Person_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Search_52px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Sign_Out_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Slider__32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Xbox_Menu_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/jimmy-fallon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/user_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserAdd.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserItem.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserListViewCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/fullpackstyling.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/utils/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/tasklist.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/tasklist.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/database/dao/TaskDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/database/dao/TaskDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/database/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/database/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/User.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +83,13 @@
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
         <item name="tasks: table" type="ffe0bd85:SqliteImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tasklist.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+        <item name="users: table" type="ffe0bd85:SqliteImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -50,43 +97,56 @@
     <session id="171050800">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.68" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.88" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="fxml" value="1" />
-          <entry key="java" value="11" />
+          <entry key="class" value="1" />
+          <entry key="css" value="2" />
+          <entry key="fxml" value="12" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="43" />
+          <entry key="png" value="3" />
           <entry key="sql" value="1" />
           <entry key="sqlite_master" value="1" />
-          <entry key="users" value="1" />
+          <entry key="tasks" value="3" />
+          <entry key="user_tasks" value="2" />
+          <entry key="users" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="Database Element" value="2" />
-          <entry key="JAVA" value="11" />
+          <entry key="CLASS" value="1" />
+          <entry key="CSS" value="2" />
+          <entry key="Database Element" value="9" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Image" value="3" />
+          <entry key="JAVA" value="43" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="133" />
-          <entry key="fxml" value="6" />
-          <entry key="java" value="4004" />
+          <entry key="cell" value="40" />
+          <entry key="css" value="135" />
+          <entry key="fxml" value="46" />
+          <entry key="java" value="9002" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="133" />
-          <entry key="JAVA" value="4004" />
-          <entry key="XML" value="6" />
+          <entry key="CSS" value="135" />
+          <entry key="JAVA" value="9002" />
+          <entry key="Scratch" value="40" />
+          <entry key="XML" value="46" />
         </counts>
       </usages-collector>
     </session>
@@ -94,59 +154,41 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://11cea9af-13a3-4bcf-8cb2-971ebf448b7b/schema/main/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#920#921#0" expanded="true" />
-                <element signature="e#1609#1610#0" expanded="true" />
-                <element signature="e#1637#1638#0" expanded="true" />
-                <element signature="e#1682#1683#0" expanded="true" />
-                <element signature="e#1716#1717#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="210">
+              <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="72" column="54" lean-forward="true" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+                <element signature="e#939#940#0" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#1094#1095#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,8 +196,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            <state relative-caret-position="531">
+              <caret line="90" column="37" lean-forward="true" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,10 +206,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://11cea9af-13a3-4bcf-8cb2-971ebf448b7b/schema/main/table/sqlite_master">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="46" column="53" lean-forward="true" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#close#0;class#ControllerDashboard#0" />
+                <element signature="method#showAddTaskDialog#0;class#ControllerDashboard#0" />
+                <element signature="method#showAddUserDialog#0;class#ControllerDashboard#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+              <folding>
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="62" column="29" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,25 +284,52 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Class" />
         <option value="FxmlFile" />
-        <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>btnCustomers</find>
+      <find>itemC</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>btnUsers</replace>
+      <replace>itemB</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/DaoFactory.java" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/User.java" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/DAO.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/SQLiteJDBCDriverConnection.java" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/style.css" />
+        <option value="$PROJECT_DIR$/src/ControllerDashboard.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/utils/DateUtil.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/User.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskController.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/ControllerDashboard.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserAdd.fxml" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/UserListViewCell.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserItem.fxml" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserListViewCell.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java" />
       </list>
     </option>
   </component>
@@ -205,12 +339,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="883" />
-    <option name="y" value="49" />
-    <option name="width" value="940" />
-    <option name="height" value="789" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="y" value="27" />
+    <option name="width" value="960" />
+    <option name="height" value="1053" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -227,6 +361,85 @@
               <item name="TaskList" type="58d84e3e:PackageViewProjectNode" />
               <item name="TaskList" type="616d4139:PackageViewModuleNode" />
               <item name="xyz.alhdo.tasklist" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,61 +491,29 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TaskList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskList" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tasklist" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542796294332" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543066960541" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jfoenix-8.0.7.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IFI/GLA/RestaurantMgtSampleUI" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view" />
+      <recent name="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="xyz.alhdo.tasklist.UI.controllers" />
+      <recent name="xyz.alhdo.tasklist.UI.view" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -375,17 +556,21 @@
       <updated>1541991385602</updated>
       <workItem from="1541991390187" duration="11526000" />
       <workItem from="1542615909664" duration="436000" />
-      <workItem from="1542775637616" duration="4765000" />
+      <workItem from="1542775637616" duration="6048000" />
+      <workItem from="1542950347255" duration="617000" />
+      <workItem from="1542953673469" duration="22608000" />
+      <workItem from="1543054311819" duration="12128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16727000" />
+    <option name="totallyTimeSpent" value="53363000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="980" y="229" width="940" height="789" extended-state="0" />
+    <frame x="0" y="27" width="960" height="1053" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30089486" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30743983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -394,7 +579,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40978593" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39234972" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,7 +587,7 @@
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.34913296" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32947975" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23606557" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -410,7 +595,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.08751334" />
+      <window_info anchor="right" id="Database" order="5" weight="0.2571116" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
@@ -430,34 +615,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java">
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/DAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java">
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/SQLiteJDBCDriverConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="570">
+          <caret line="40" column="187" selection-start-line="40" selection-start-column="187" selection-end-line="40" selection-end-column="187" />
         </state>
       </provider>
     </entry>
@@ -468,30 +639,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/TaskList.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
+        <state relative-caret-position="300">
+          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ControllerDashboard.java" />
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/jimmy-fallon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Search_52px.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/fullpackstyling.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Person_32px.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/utils/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="das://11cea9af-13a3-4bcf-8cb2-971ebf448b7b/schema/main/table/user_tasks">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://11cea9af-13a3-4bcf-8cb2-971ebf448b7b/schema/main/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="255">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#894#895#0" expanded="true" />
@@ -504,45 +704,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/SQLiteJDBCDriverConnection.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/rt.jar!/sun/launcher/LauncherHelper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="40" column="187" selection-start-line="40" selection-start-column="187" selection-end-line="40" selection-end-column="187" />
+        <state relative-caret-position="409">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserItem.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserAdd.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="157" column="53" lean-forward="true" selection-start-line="157" selection-start-column="53" selection-end-line="157" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="46" column="53" lean-forward="true" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://11cea9af-13a3-4bcf-8cb2-971ebf448b7b/schema/main/table/users">
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserListViewCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="72" column="54" lean-forward="true" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://11cea9af-13a3-4bcf-8cb2-971ebf448b7b/schema/main/table/tasks">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="591">
+          <caret line="62" column="29" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="531">
+          <caret line="90" column="37" lean-forward="true" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/style.css">
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#close#0;class#ControllerDashboard#0" />
+            <element signature="method#showAddTaskDialog#0;class#ControllerDashboard#0" />
+            <element signature="method#showAddUserDialog#0;class#ControllerDashboard#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

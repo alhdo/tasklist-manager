@@ -86,6 +86,10 @@ public class User {
         this.tasks = tasks;
     }
 
+    public String getNomComplet(){
+        return  this.prenom+ " "+ this.nom;
+    }
+
     public void addTask(Task task){
         this.tasks.add(task);
     }

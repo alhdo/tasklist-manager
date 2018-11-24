@@ -93,6 +93,30 @@ public class UserDao extends DAO<User> {
         }
         return user;
     }
+    public User findUser(String email) {
+        User user = new User();
+        try {
+            String query = "SELECT * FROM users where email = ?;";
+
+
+            PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+            preparedStatement.setString(1, email);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+                user = new User(resultSet.getInt("id"),
+                        resultSet.getString("nom"),
+                        resultSet.getString("prenom"));
+                user.setAdresse(resultSet.getString("adresse"));
+                user.setTelephone(resultSet.getString("telephone"));
+                user.setEmail(resultSet.getString("email"));
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return user;
+    }
 
     public List<User> find(String searchString){
         List<User> users = new ArrayList<>();

@@ -1,11 +1,10 @@
 package xyz.alhdo.tasklist.database.dao;
 
 import xyz.alhdo.tasklist.models.Task;
+import xyz.alhdo.tasklist.utils.DateUtil;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TaskDao extends DAO<Task> {
@@ -16,19 +15,33 @@ public class TaskDao extends DAO<Task> {
     @Override
     public boolean create(Task obj) {
         try {
+            String generatedColumns[] = { "id" };
             String query = "INSERT INTO tasks(nom, description, datedebut, datefin, etat) VALUES (?,?,?,?,?);";
-            PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+            PreparedStatement preparedStatement = this.connection.prepareStatement(query, generatedColumns);
 
             preparedStatement.setString(1,obj.getNom());
             preparedStatement.setString(2, obj.getDescription());
-//            preparedStatement.setDate(3 , obj.getDateDebut());
-//            preparedStatement.setDate(4, obj.getDateFin());
+            preparedStatement.setDate(3 , DateUtil.transformUtilToSql(obj.getDateDebut()));
+            preparedStatement.setDate(4, DateUtil.transformUtilToSql(obj.getDateFin()));
             preparedStatement.setInt(5, obj.getEtat());
 
             preparedStatement.execute();
 
             if(obj.getUser()!=null){
                 // Here you insert in the midlle table
+                ResultSet resultSet = preparedStatement.getGeneratedKeys();
+                if(resultSet.next()){
+                    String q = "INSERT INTO user_tasks (user_id, task_id) VALUES (?,?);";
+
+                    PreparedStatement pStat = this.connection.prepareStatement(q);
+
+                    pStat.setInt(1,obj.getUser().getId());
+                    pStat.setInt(2, resultSet.getInt(1));
+                    pStat.execute();
+
+                }
+
+
             }
 
         }catch (SQLException e){
@@ -70,6 +83,24 @@ public class TaskDao extends DAO<Task> {
 
     @Override
     public List<Task> loadAll() {
-        return null;
+        List<Task> tasks = new ArrayList<>();
+        try{
+            String request= "SELECT * FROM tasks";
+            PreparedStatement preparedStatement =this.connection.prepareStatement(request);
+            ResultSet resultSet=preparedStatement.executeQuery();
+            while (resultSet.next()){
+                Task task = new Task();
+                task.setId(resultSet.getInt("id"));
+                task.setDescription(resultSet.getString("description"));
+                task.setNom(resultSet.getString("nom"));
+                task.setDateFin(resultSet.getDate("datefin"));
+                task.setDateDebut(resultSet.getDate("datedebut"));
+                task.setEtat(resultSet.getInt("etat"));
+                tasks.add(task);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return tasks;
     }
 }

@@ -2,44 +2,55 @@ package xyz.alhdo.tasklist;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import xyz.alhdo.tasklist.database.SQLiteJDBCDriverConnection;
-import xyz.alhdo.tasklist.database.dao.DAO;
-import xyz.alhdo.tasklist.database.dao.DaoFactory;
-import xyz.alhdo.tasklist.database.dao.UserDao;
-import xyz.alhdo.tasklist.models.User;
+import javafx.stage.StageStyle;
+import xyz.alhdo.tasklist.UI.controllers.ControllerDashboard;
 
 import java.io.IOException;
 
 public class Main extends Application {
     private Stage mainStage;
 
+    private double x, y;
+
     private AnchorPane mainContainer;
 
     public static void main(String[] args) {
-//        UserDao userDao = new UserDao(SQLiteJDBCDriverConnection.getInstance());
-//        User user = new User();
-//        user.setNom("Castro");
-//        user.setPrenom("Alhdo");
-//        user.setAdresse("Ky Tuc Xa my dinh");
-//        user.setTelephone("+840934487216");
-//        user.setEmail("castroalhdo@gmail.com");
-//
-//                if(userDao.create(user)){
-//                    System.out.println("Saved");
-//                }else {
-//                    System.out.println("Error");
-//                }
             launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-            mainStage = primaryStage;
-            mainStage.setTitle("Task Management V0.1");
-            initializeMainContainer();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("UI/view/MainContainer.fxml"));
+        Parent root = loader.load();
+        primaryStage.setScene(new Scene(root));
+        //set stage borderless
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+
+        //drag it here
+        root.setOnMousePressed(event -> {
+            x = event.getSceneX();
+            y = event.getSceneY();
+        });
+        root.setOnMouseDragged(event -> {
+
+            primaryStage.setX(event.getScreenX() - x);
+            primaryStage.setY(event.getScreenY() - y);
+
+        });
+        mainStage = primaryStage;
+        ControllerDashboard controllerDashboard = loader.getController();
+        controllerDashboard.setMainApplication(this);
+        controllerDashboard.setMainStage(mainStage);
+        primaryStage.show();
+    }
+
+    public Stage getMainStage(){
+        return mainStage;
     }
 
     private void initializeMainContainer(){
