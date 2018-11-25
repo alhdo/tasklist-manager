@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717a728c-4686-4139-a362-fe373ba0ecc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/ic_delete.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserAdd.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,12 +82,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="125">
+              <caret line="121" column="16" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -107,7 +102,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -214,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/ControllerDashboard.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserAdd.fxml" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/UserListViewCell.java" />
@@ -227,6 +221,7 @@
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" />
       </list>
     </option>
   </component>
@@ -438,12 +433,12 @@
       <workItem from="1543111495958" duration="189000" />
       <workItem from="1543111716555" duration="2738000" />
       <workItem from="1543127544330" duration="10484000" />
-      <workItem from="1543141483759" duration="2776000" />
+      <workItem from="1543141483759" duration="3320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70170000" />
+    <option name="totallyTimeSpent" value="70714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
@@ -704,14 +699,6 @@
     <entry file="file://$PROJECT_DIR$/hs_err_pid31754.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskEdit.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -730,6 +717,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="28" column="33" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="121" column="16" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
         </state>
       </provider>
     </entry>

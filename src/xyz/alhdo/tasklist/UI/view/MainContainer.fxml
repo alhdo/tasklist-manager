@@ -118,7 +118,8 @@
                         </CheckBox>
                      </children>
                   </Pane>
-               </children></Pane>
+               </children>
+                </Pane>
                 <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" visible="false">
                <children>
                   <Label layoutX="30.0" layoutY="25.0" text="Liste des membres de l'équipe" textFill="#e7e5e5">

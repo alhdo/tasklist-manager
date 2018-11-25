@@ -19,27 +19,36 @@
                         <Image url="@../images/user_add.png" />
                     </image>
                 </ImageView>
-                <Label alignment="CENTER" layoutX="105.0" layoutY="262.0" prefHeight="23.0" prefWidth="173.0" text="User" textFill="WHITE">
+                <Label alignment="CENTER" layoutX="105.0" layoutY="262.0" prefHeight="23.0" prefWidth="173.0" text="Membre de l'équipe" textFill="WHITE">
                     <font>
                         <Font name="Segoe UI" size="18.0" />
                     </font>
                 </Label>
-                <Label alignment="CENTER" layoutX="89.0" layoutY="295.0" prefHeight="23.0" prefWidth="205.0" text="Add a userk to the list" textFill="WHITE">
+                <Label alignment="CENTER" layoutX="89.0" layoutY="295.0" prefHeight="23.0" prefWidth="205.0" text="Ajouter ou modifier un membre" textFill="WHITE">
                     <font>
                         <Font name="Segoe UI" size="12.0" />
                     </font>
                 </Label>
             </children>
         </AnchorPane>
-        <Pane layoutX="402.0" prefHeight="442.0" prefWidth="403.0" AnchorPane.bottomAnchor="58.0" AnchorPane.topAnchor="0.0">
+        <Pane layoutX="404.0" layoutY="23.0" prefHeight="442.0" prefWidth="403.0" AnchorPane.bottomAnchor="35.0" AnchorPane.topAnchor="23.0">
             <children>
                 <TextField fx:id="fieldLastname" layoutX="46.0" layoutY="36.0" prefHeight="34.0" prefWidth="275.0" promptText="Nom" />
-                <Button fx:id="btnCancel" layoutX="39.0" layoutY="394.0" mnemonicParsing="false" onAction="#cancel" prefHeight="34.0" prefWidth="137.0" stylesheets="@fullpackstyling.css" text="Cancel" />
-                <Button fx:id="btnSave" layoutX="206.0" layoutY="394.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #0C39FF;" text="SAVE" textFill="WHITE" />
+                <Button fx:id="btnCancel" layoutX="39.0" layoutY="394.0" mnemonicParsing="false" onAction="#cancel" prefHeight="34.0" prefWidth="137.0" stylesheets="@fullpackstyling.css" text="ANNULER" />
+                <Button fx:id="btnSave" layoutX="206.0" layoutY="394.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #0C39FF;" text="MODIFIER" textFill="WHITE" />
             <TextField fx:id="fieldFirstname" layoutX="46.0" layoutY="90.0" prefHeight="34.0" prefWidth="275.0" promptText="Prenom" />
             <TextField fx:id="fieldPhone" layoutX="46.0" layoutY="281.0" prefHeight="34.0" prefWidth="275.0" promptText="Telephone" />
             <TextField fx:id="fieldEmail" layoutX="46.0" layoutY="333.0" prefHeight="34.0" prefWidth="275.0" promptText="Email" />
             <TextArea fx:id="fieldAdress" layoutX="46.0" layoutY="147.0" prefHeight="110.0" prefWidth="275.0" promptText="Addresse" />
+            <Button layoutX="238.0" layoutY="-15.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="146.0" style="-fx-background-color: #F00;" text="SUPPRIMER" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
             </children>
         </Pane>
     </children>
