@@ -21,33 +21,42 @@
                         <Image url="@../images/icons8_Open_Envelope_32px.png" />
                     </image>
                 </ImageView>
-                <Label alignment="CENTER" layoutX="105.0" layoutY="262.0" prefHeight="23.0" prefWidth="173.0" text="Task" textFill="WHITE">
+                <Label alignment="CENTER" layoutX="105.0" layoutY="262.0" prefHeight="23.0" prefWidth="173.0" text="Tâche" textFill="WHITE">
                     <font>
                         <Font name="Segoe UI" size="18.0" />
                     </font>
                 </Label>
-                <Label alignment="CENTER" layoutX="89.0" layoutY="295.0" prefHeight="23.0" prefWidth="205.0" text="Add a task to the list" textFill="WHITE">
+                <Label alignment="CENTER" layoutX="89.0" layoutY="295.0" prefHeight="23.0" prefWidth="205.0" text="Ajouter ou modifier une tâche" textFill="WHITE">
                     <font>
                         <Font name="Segoe UI" size="12.0" />
                     </font>
                 </Label>
             </children>
         </AnchorPane>
-        <Pane layoutX="400.0" layoutY="14.0" prefHeight="442.0" prefWidth="403.0" AnchorPane.bottomAnchor="44.0" AnchorPane.topAnchor="14.0">
+        <Pane layoutX="399.0" layoutY="50.0" prefHeight="442.0" prefWidth="403.0" AnchorPane.bottomAnchor="8.0" AnchorPane.topAnchor="50.0">
             <children>
                 <TextField fx:id="fieldName" layoutX="46.0" layoutY="14.0" prefHeight="34.0" prefWidth="275.0" promptText="Nom" />
-                <Button fx:id="btnCancel" layoutX="39.0" layoutY="394.0" mnemonicParsing="false" onAction="#cancel" prefHeight="34.0" prefWidth="137.0" stylesheets="@fullpackstyling.css" text="Cancel" />
-                <Button fx:id="btnSave" layoutX="206.0" layoutY="394.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #0C39FF;" text="SAVE" textFill="WHITE" />
+                <Button fx:id="btnCancel" layoutX="39.0" layoutY="394.0" mnemonicParsing="false" onAction="#cancel" prefHeight="34.0" prefWidth="137.0" stylesheets="@fullpackstyling.css" text="ANNULER" />
+                <Button fx:id="btnSave" layoutX="206.0" layoutY="394.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #0C39FF;" text="SAUVEGARDER" textFill="WHITE" />
                 <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
                     <font>
                         <Font name="Segoe UI" size="10.0" />
                     </font>
                 </Label>
             <TextArea fx:id="fieldDescription" layoutX="46.0" layoutY="58.0" prefHeight="157.0" prefWidth="275.0" promptText="Description" />
-            <DatePicker fx:id="fieldDateDebut" layoutX="46.0" layoutY="238.0" prefHeight="34.0" prefWidth="275.0" promptText="Date debut" />
+            <DatePicker fx:id="fieldDateDebut" layoutX="46.0" layoutY="238.0" prefHeight="34.0" prefWidth="275.0" promptText="Date début" />
             <DatePicker fx:id="fieldDateFin" layoutX="46.0" layoutY="294.0" prefHeight="34.0" prefWidth="275.0" promptText="Date de fin" />
             <ComboBox fx:id="userList" layoutX="46.0" layoutY="342.0" prefHeight="34.0" prefWidth="275.0" />
             </children>
         </Pane>
+      <Button layoutX="649.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ff0000;" text="SUPPRIMER" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
     </children>
 </AnchorPane>

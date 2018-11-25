@@ -239,11 +239,11 @@ public class ControllerDashboard implements Initializable {
     public void close(){
         Alert bye = new Alert(Alert.AlertType.INFORMATION);
 
-        bye.setTitle("Good bye!");
+        bye.setTitle("Au revoir!");
 
-        bye.setHeaderText("See you soon...");
+        bye.setHeaderText("À bientôt ...");
 
-        bye.setContentText("Thanks for using this program !");
+        bye.setContentText("Merci d'avoir utiliser l'application!");
 
         bye.showAndWait();
 

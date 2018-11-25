@@ -2,9 +2,9 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
@@ -93,12 +93,12 @@
                 <Pane fx:id="pnlMenus" disable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #777;" />
                 <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" visible="false">
                <children>
-                  <Label layoutX="57.0" layoutY="25.0" text="Task list" textFill="#e7e5e5">
+                  <Label layoutX="30.0" layoutY="25.0" text="Liste des tâches" textFill="#e7e5e5">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="45.0" layoutY="74.0" mnemonicParsing="false" onAction="#addTask" stylesheets="@style.css" text="Add Task">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="30.0" layoutY="60.0" mnemonicParsing="false" onAction="#addTask" stylesheets="@style.css" text="Ajouter une tâche">
                      <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -107,49 +107,19 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <TextField fx:id="searchTask" layoutX="589.0" layoutY="46.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
-                  <HBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="178.0" prefHeight="42.0" prefWidth="778.0" spacing="80.0" style="-fx-background-color: #02030A;">
+                  <TextField fx:id="searchTask" layoutX="589.0" layoutY="20.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #777; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" text="Rechercher" />
+                  <ListView fx:id="listView1" layoutX="10.0" layoutY="120.0" prefHeight="450.0" prefWidth="770.0" style="-fx-background-color: #02030A;" />
+                  <Pane layoutX="238.0" layoutY="61.0" prefHeight="33.0" prefWidth="138.0" style="-fx-background-color: #02030A;">
                      <children>
-                        <Label text="Description" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets left="2.0" />
-                           </HBox.margin>
-                        </Label>
-                        <Label text="Date debut" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Label>
-                        <Label text="Date fin" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Label>
-                        <Label text="User" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Label>
-                        <Label text="Status" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Label>
+                        <CheckBox alignment="CENTER" layoutX="20.0" layoutY="6.0" mnemonicParsing="false" text="ASSIGNÉE" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
                      </children>
-                  </HBox>
-                  <ScrollPane layoutX="14.0" layoutY="232.0" prefHeight="320.0" prefWidth="746.0" stylesheets="@style.css">
-                     <content>
-                        <VBox fx:id="pnItems1" prefHeight="318.0" prefWidth="744.0" spacing="5.0" style="-fx-background-color: #02030A;">
-                           <padding>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </padding>
-                           <children>
-                              <ListView fx:id="listView1" prefHeight="327.0" prefWidth="734.0" style="-fx-background-color: #02030A;" />
-                           </children>
-                        </VBox>
-                     </content>
-                  </ScrollPane>
-               </children></Pane>
+                  </Pane>
+               </children>
+                </Pane>
                 <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" visible="false">
                <children>
                   <Label layoutX="30.0" layoutY="25.0" text="Liste des membres de l'équipe" textFill="#e7e5e5">
@@ -168,11 +138,12 @@
                   </Button>
                   <TextField fx:id="searchUser" layoutX="589.0" layoutY="20.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #777; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" text="Rechercher" />
                   <ListView fx:id="listUser" layoutX="10.0" layoutY="120.0" prefHeight="450.0" prefWidth="770.0" style="-fx-background-color: #02030A;" />
-               </children></Pane>
+               </children>
+            </Pane>
                 <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0">
                     <children>
                         <TextField layoutX="590.0" layoutY="20.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #777; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" text="Rechercher" />
-                        <Label layoutX="57.0" layoutY="25.0" text="Gestion de tâches" textFill="#e7e5e5">
+                        <Label layoutX="30.0" layoutY="25.0" text="Gestion de tâches" textFill="#e7e5e5">
                             <font>
                                 <Font size="24.0" />
                             </font>
@@ -221,12 +192,7 @@
                                 </VBox>
                             </children>
                         </HBox>
-                  <ListView fx:id="listView" layoutX="14.0" layoutY="170.0" prefHeight="400.0" prefWidth="760.0" style="-fx-background-color: #777;" />
-                        <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="749.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../images/icons8_Search_52px.png" />
-                            </image>
-                        </ImageView>
+                  <ListView fx:id="listView" layoutX="10.0" layoutY="170.0" prefHeight="400.0" prefWidth="770.0" style="-fx-background-color: #777;" />
                     </children>
                 </Pane>
             </children>
