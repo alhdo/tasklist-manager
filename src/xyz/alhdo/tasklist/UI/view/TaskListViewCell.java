@@ -60,12 +60,16 @@ public class TaskListViewCell extends ListCell<Task> {
             description.setText(item.getDescription());
             debut.setText(item.getDateDebut().toString());
             fin.setText(item.getDateFin().toString());
-            user.setText("Castro Alhdo");
+            if (item.getUser() == null) {
+                user.setText("Pas assignée");
+            } else {
+                user.setText("En cours");
+            }
             itemC.setOnMouseEntered(event -> {
-                    itemC.setStyle("-fx-background-color : #0A0E3F");
+                    itemC.setStyle("-fx-background-color : #3c3d4c");
                 });
             itemC.setOnMouseExited(event -> {
-                itemC.setStyle("-fx-background-color : #02030A");
+                itemC.setStyle("-fx-background-color : #2b2b2b");
                 });
             setText(null);
             setGraphic(itemC);

@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717a728c-4686-4139-a362-fe373ba0ecc5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TaskList.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/tasklist.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/tasklist.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/Item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/Item.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/TaskListViewCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/TaskListViewCell.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserItem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="406">
+              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,28 +98,67 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="131">
+              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="107" selection-start-line="107" selection-end-line="142" selection-end-column="52" />
+            <state relative-caret-position="243">
+              <caret line="172" column="64" selection-start-line="172" selection-start-column="64" selection-end-line="172" selection-end-column="64" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#close#0;class#ControllerDashboard#0" />
+                <element signature="e#5174#5175#0" expanded="true" />
+                <element signature="e#5240#5241#0" expanded="true" />
                 <element signature="method#showAddUserDialog#0;class#ControllerDashboard#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-85">
+              <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hs_err_pid31754.log">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -144,6 +181,10 @@
       <find>btnUsers</find>
       <find>pnlCustomer</find>
       <find>toFront</find>
+      <find>visi</find>
+      <find>loadall</find>
+      <find>taskObservableList</find>
+      <find>see you</find>
     </findStrings>
     <replaceStrings>
       <replace>btnUsers</replace>
@@ -174,16 +215,16 @@
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserItem.fxml" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserListViewCell.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="723" />
@@ -382,18 +423,18 @@
       <workItem from="1543068951727" duration="620000" />
       <workItem from="1543111495958" duration="189000" />
       <workItem from="1543111716555" duration="2738000" />
-      <workItem from="1543127544330" duration="6263000" />
+      <workItem from="1543127544330" duration="10484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63173000" />
+    <option name="totallyTimeSpent" value="67394000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="723" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="728" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24474959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24474959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -402,7 +443,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2282092" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2845912" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -509,14 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
@@ -550,13 +583,6 @@
             <element signature="e#579#580#0" expanded="true" />
             <element signature="e#604#605#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -602,31 +628,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserItem.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,23 +643,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/ListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="388" column="22" selection-start-line="388" selection-start-column="22" selection-end-line="388" selection-end-column="22" />
+          <folding>
+            <element signature="e#17232#17233#0" expanded="true" />
+            <element signature="e#17274#17275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        <state relative-caret-position="93">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hs_err_pid31754.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="107" selection-start-line="107" selection-end-line="142" selection-end-column="52" />
+        <state relative-caret-position="243">
+          <caret line="172" column="64" selection-start-line="172" selection-start-column="64" selection-end-line="172" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#close#0;class#ControllerDashboard#0" />
+            <element signature="e#5174#5175#0" expanded="true" />
+            <element signature="e#5240#5241#0" expanded="true" />
             <element signature="method#showAddUserDialog#0;class#ControllerDashboard#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
         </state>
       </provider>
     </entry>
