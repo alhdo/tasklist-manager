@@ -1,14 +1,14 @@
 package xyz.alhdo.tasklist.UI.controllers;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import xyz.alhdo.tasklist.Main;
 import xyz.alhdo.tasklist.database.dao.DaoFactory;
 import xyz.alhdo.tasklist.database.dao.UserDao;
 import xyz.alhdo.tasklist.models.User;
+
+import java.util.Optional;
 
 public class UserController {
 
@@ -74,6 +74,32 @@ public class UserController {
     @FXML
     public void cancel(){
                 userStage.close();
+    }
+
+    @FXML
+    public void delete(){
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirmation Dialog");
+        alert.setHeaderText("Look, a Confirmation Dialog");
+        alert.setContentText("Are you ok with this?");
+
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.get() == ButtonType.OK){
+            if(user!=null){
+                try {
+                    UserDao userDao = (UserDao) DaoFactory.getUserDao();
+                    userDao.delete(user);
+                    this.parentDashboard.deleteUser(user);
+                    this.parentDashboard.refreshUserList();
+                    userStage.close();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        } else {
+            // ... user chose CANCEL or closed the dialog
+        }
+
     }
 
     @FXML public void save(){

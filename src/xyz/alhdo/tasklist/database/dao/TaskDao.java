@@ -132,7 +132,7 @@ public class TaskDao extends DAO<Task> {
     public List<Task> loadAll() {
         List<Task> tasks = new ArrayList<>();
         try{
-            String request= "SELECT * FROM tasks";
+            String request= "SELECT tasks.id as id, tasks.description as description, tasks.nom as nom, tasks.datedebut as datedebut, tasks.datefin as datefin, tasks.etat as etat, user_id as userid FROM tasks LEFT JOIN user_tasks ON tasks.id = user_tasks.task_id LEFT JOIN users ON users.id = user_tasks.user_id";
             PreparedStatement preparedStatement =this.connection.prepareStatement(request);
             ResultSet resultSet=preparedStatement.executeQuery();
             while (resultSet.next()){
@@ -143,6 +143,10 @@ public class TaskDao extends DAO<Task> {
                 task.setDateFin(resultSet.getDate("datefin"));
                 task.setDateDebut(resultSet.getDate("datedebut"));
                 task.setEtat(resultSet.getInt("etat"));
+                if(resultSet.getInt("userid")>0){
+                    task.setUser((User) DaoFactory.getUserDao().find(resultSet.getInt("userid")));
+                }
+                System.out.println(resultSet.getInt("userid"));
                 tasks.add(task);
             }
         }catch (SQLException e){

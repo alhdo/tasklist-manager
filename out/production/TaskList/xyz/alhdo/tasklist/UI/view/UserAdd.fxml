@@ -40,7 +40,7 @@
             <TextField fx:id="fieldPhone" layoutX="46.0" layoutY="281.0" prefHeight="34.0" prefWidth="275.0" promptText="Telephone" />
             <TextField fx:id="fieldEmail" layoutX="46.0" layoutY="333.0" prefHeight="34.0" prefWidth="275.0" promptText="Email" />
             <TextArea fx:id="fieldAdress" layoutX="46.0" layoutY="147.0" prefHeight="110.0" prefWidth="275.0" promptText="Addresse" />
-            <Button fx:id="userDeleteBtn" layoutX="238.0" layoutY="-15.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="146.0" style="-fx-background-color: #F00;" text="SUPPRIMER" textFill="WHITE">
+            <Button fx:id="userDeleteBtn" layoutX="238.0" layoutY="-15.0" mnemonicParsing="false" onAction="#delete" prefHeight="34.0" prefWidth="146.0" style="-fx-background-color: #F00;" text="SUPPRIMER" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="32.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                      <image>

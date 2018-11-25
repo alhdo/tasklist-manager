@@ -1,5 +1,7 @@
 package xyz.alhdo.tasklist.UI.controllers;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -87,7 +89,10 @@ public class ControllerDashboard implements Initializable {
     @FXML
     private TextField searchTask;
 
+    @FXML
+    private CheckBox checkbox;
 
+    private boolean isSelected = false;
     private Main main;
 
     private Stage mainStage;
@@ -186,6 +191,26 @@ public class ControllerDashboard implements Initializable {
         SortedList<Task> sortedTask = new SortedList<>(filteredTask);
         listView1.setItems(sortedTask);
 
+        checkbox.selectedProperty().addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue){
+                    isSelected = true;
+                    filteredTask.setPredicate(task -> {
+                        if(task.getUser()!=null){
+                            return true;
+                        }
+                        return false;
+                    });
+                }else{
+                    isSelected = false;
+                    filteredTask.setPredicate(task -> {
+
+                        return true;
+                    });
+                }
+            }
+        });
         listView.setCellFactory(taskListView -> new TaskListViewCell());
         listView1.setCellFactory(taskListView -> new TaskListViewCell());
         listUser.setCellFactory(userListView -> new UserListViewCell());
@@ -198,11 +223,15 @@ public class ControllerDashboard implements Initializable {
         listView1.refresh();
 
     }
+
+    public void deleteUser(User user){
+        userObservableList.remove(user);
+    }
+    public void deleteTask(Task task){
+        taskObservableList.remove(task);
+    }
     public void refreshUserList(){
-//        userObservableList.removeAll();
         listUser.refresh();
-//        userObservableList.clear();
-//        userObservableList.addAll(DaoFactory.getUserDao().loadAll());
     }
 
     public void handleClicks(ActionEvent actionEvent) {
@@ -212,6 +241,7 @@ public class ControllerDashboard implements Initializable {
             pnlCustomer.setVisible(true);
             pnlOverview.setVisible(false);
             pnlOrders.setVisible(false);
+            refreshUserList();
         }
 //        if (actionEvent.getSource() == btnMenus) {
 //            pnlMenus.setStyle("-fx-background-color : #53639F");
@@ -232,6 +262,7 @@ public class ControllerDashboard implements Initializable {
             pnlCustomer.setVisible(false);
             pnlOverview.setVisible(false);
             pnlOrders.setVisible(true);
+            refresh();
         }
     }
 

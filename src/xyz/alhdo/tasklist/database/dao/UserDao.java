@@ -74,13 +74,13 @@ public class UserDao extends DAO<User> {
     public User find(int id) {
         User user = new User();
         try {
-            String query = "SELECT * FROM users where id = "+id;
+            String query = "SELECT * FROM users where id = ?";
 
-            ResultSet resultSet = this.connection.createStatement(
-                    ResultSet.TYPE_SCROLL_INSENSITIVE,
-                    ResultSet.CONCUR_READ_ONLY).executeQuery(query);
+           PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+           preparedStatement.setInt(1,id);
+           ResultSet resultSet = preparedStatement.executeQuery();
 
-            if(resultSet.first()){
+            if(resultSet.next()){
                 user = new User(resultSet.getInt("id"),
                 resultSet.getString("nom"),
                         resultSet.getString("prenom"));
