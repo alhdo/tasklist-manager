@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -90,8 +91,8 @@
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+            <state relative-caret-position="960">
+              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -437,18 +438,17 @@
       <workItem from="1543111495958" duration="189000" />
       <workItem from="1543111716555" duration="2738000" />
       <workItem from="1543127544330" duration="10484000" />
-      <workItem from="1543141483759" duration="2505000" />
+      <workItem from="1543141483759" duration="2776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69899000" />
+    <option name="totallyTimeSpent" value="70170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24878837" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24878837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -457,7 +457,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28365386" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.28365386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,8 +465,8 @@
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.34913296" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23606557" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" visible="true" weight="0.23557693" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.23557693" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3296355" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -707,8 +707,8 @@
     <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        <state relative-caret-position="960">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
         </state>
       </provider>
     </entry>
