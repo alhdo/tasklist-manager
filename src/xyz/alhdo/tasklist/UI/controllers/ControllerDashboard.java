@@ -98,7 +98,7 @@ public class ControllerDashboard implements Initializable {
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        UserListViewCell userListViewCell = new UserListViewCell();
         listView.setItems(taskObservableList);
         listView1.setItems(taskObservableList);
         listUser.setItems(userObservableList);
@@ -120,6 +120,13 @@ public class ControllerDashboard implements Initializable {
                 showAddTaskDialog(listView.getSelectionModel().getSelectedItem(),"Edit task");
             }
         });
+
+        listUser.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                showAddUserDialog(listUser.getSelectionModel().getSelectedItem(), "Edit user");
+            }
+        });
         listView.setCellFactory(taskListView -> new TaskListViewCell());
         listView1.setCellFactory(taskListView -> new TaskListViewCell());
         listUser.setCellFactory(userListView -> new UserListViewCell());
@@ -134,21 +141,31 @@ public class ControllerDashboard implements Initializable {
 
     public void handleClicks(ActionEvent actionEvent) {
         if (actionEvent.getSource() == btnUsers) {
-            pnlCustomer.setStyle("-fx-background-color : #1620A1");
+//            pnlCustomer.setStyle("-fx-background-color : #1620A1");
             pnlCustomer.toFront();
+            pnlCustomer.setVisible(true);
+            pnlOverview.setVisible(false);
+            pnlOrders.setVisible(false);
         }
 //        if (actionEvent.getSource() == btnMenus) {
 //            pnlMenus.setStyle("-fx-background-color : #53639F");
 //            pnlMenus.toFront();
 //        }
         if (actionEvent.getSource() == btnOverview) {
-            pnlOverview.setStyle("-fx-background-color : #02030A");
-            pnlOverview.toFront();
+//            pnlOverview.setStyle("-fx-background-color : #02030A");
+
+            pnlCustomer.setVisible(false);
+            pnlOverview.setVisible(true);
+            pnlOrders.setVisible(false);
         }
         if(actionEvent.getSource()==btnTasks)
         {
-            pnlOrders.setStyle("-fx-background-color : #464F67");
+//            pnlOrders.setStyle("-fx-background-color : #464F67");
             pnlOrders.toFront();
+
+            pnlCustomer.setVisible(false);
+            pnlOverview.setVisible(false);
+            pnlOrders.setVisible(true);
         }
     }
 

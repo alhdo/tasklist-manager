@@ -29,19 +29,19 @@ public class Main extends Application {
         Parent root = loader.load();
         primaryStage.setScene(new Scene(root));
         //set stage borderless
-        primaryStage.initStyle(StageStyle.UNDECORATED);
+        //primaryStage.initStyle(StageStyle.UNDECORATED);
 
         //drag it here
         root.setOnMousePressed(event -> {
             x = event.getSceneX();
             y = event.getSceneY();
         });
-        root.setOnMouseDragged(event -> {
-
-            primaryStage.setX(event.getScreenX() - x);
-            primaryStage.setY(event.getScreenY() - y);
-
-        });
+//        root.setOnMouseDragged(event -> {
+//
+//            primaryStage.setX(event.getScreenX() - x);
+//            primaryStage.setY(event.getScreenY() - y);
+//
+//        });
         mainStage = primaryStage;
         ControllerDashboard controllerDashboard = loader.getController();
         controllerDashboard.setMainApplication(this);
