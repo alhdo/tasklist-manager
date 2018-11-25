@@ -98,7 +98,7 @@ public class ControllerDashboard implements Initializable {
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        UserListViewCell userListViewCell = new UserListViewCell();
         listView.setItems(taskObservableList);
         listView1.setItems(taskObservableList);
         listUser.setItems(userObservableList);
@@ -118,6 +118,13 @@ public class ControllerDashboard implements Initializable {
             public void handle(MouseEvent event) {
                 System.out.println("Clicked on "+ listView.getSelectionModel().getSelectedItem().getNom());
                 showAddTaskDialog(listView.getSelectionModel().getSelectedItem(),"Edit task");
+            }
+        });
+
+        listUser.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                showAddUserDialog(listUser.getSelectionModel().getSelectedItem(), "Edit user");
             }
         });
         listView.setCellFactory(taskListView -> new TaskListViewCell());

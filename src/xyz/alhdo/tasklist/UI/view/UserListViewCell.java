@@ -2,6 +2,8 @@ package xyz.alhdo.tasklist.UI.view;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
 import javafx.scene.layout.HBox;
@@ -28,6 +30,9 @@ public class UserListViewCell extends ListCell<User> {
     @FXML
     private HBox itemB;
 
+
+
+
     private FXMLLoader fxmlLoader;
     @Override
     protected void updateItem(User item, boolean empty) {
@@ -52,15 +57,19 @@ public class UserListViewCell extends ListCell<User> {
                 email.setText(item.getEmail());
 
                 adress.setText(item.getAdresse());
+
+
                 itemB.setOnMouseEntered(event -> {
                     itemB.setStyle("-fx-background-color : #0A0E3F");
                 });
                 itemB.setOnMouseExited(event -> {
                     itemB.setStyle("-fx-background-color : #02030A");
                 });
+                itemB.setUserData(item);
                 setText(null);
                 setGraphic(itemB);
             }
         }
+
 
 }
