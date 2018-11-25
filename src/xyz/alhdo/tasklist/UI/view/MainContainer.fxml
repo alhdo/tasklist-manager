@@ -107,7 +107,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <TextField layoutX="589.0" layoutY="46.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                  <TextField fx:id="searchTask" layoutX="589.0" layoutY="46.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
                   <HBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="178.0" prefHeight="42.0" prefWidth="778.0" spacing="80.0" style="-fx-background-color: #02030A;">
                      <children>
                         <Label text="Description" textFill="#e7e5e5">
@@ -166,7 +166,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <TextField layoutX="589.0" layoutY="20.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #777; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" text="Rechercher" />
+                  <TextField fx:id="searchUser" layoutX="589.0" layoutY="20.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #777; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" text="Rechercher" />
                   <ListView fx:id="listUser" layoutX="10.0" layoutY="120.0" prefHeight="450.0" prefWidth="770.0" style="-fx-background-color: #02030A;" />
                </children></Pane>
                 <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0">

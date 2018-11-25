@@ -2,6 +2,8 @@ package xyz.alhdo.tasklist.UI.controllers;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -10,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.ContextMenuEvent;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -26,6 +29,7 @@ import xyz.alhdo.tasklist.models.User;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class ControllerDashboard implements Initializable {
@@ -43,6 +47,8 @@ public class ControllerDashboard implements Initializable {
     private ObservableList<Task> taskObservableList;
 
     private ObservableList<User> userObservableList;
+
+
 
     @FXML
     private VBox pnItems = null;
@@ -75,17 +81,28 @@ public class ControllerDashboard implements Initializable {
     @FXML
     private Pane pnlMenus;
 
+    @FXML
+    private TextField searchUser;
+
+    @FXML
+    private TextField searchTask;
+
+
     private Main main;
 
     private Stage mainStage;
+
+    private List<User> users;
 
     public ControllerDashboard(){
         taskObservableList = FXCollections.observableArrayList();
         userObservableList = FXCollections.observableArrayList();
 
+
         taskObservableList.addAll(DaoFactory.getTaskDao().loadAll());
         UserDao userDao = (UserDao)DaoFactory.getUserDao();
-        userObservableList.addAll(userDao.loadAll());
+        users = userDao.loadAll();
+        userObservableList.addAll(users);
 
     }
 
@@ -103,15 +120,7 @@ public class ControllerDashboard implements Initializable {
         listView1.setItems(taskObservableList);
         listUser.setItems(userObservableList);
 
-//        ContextMenu contextMenu = new ContextMenu();
-//
-//        MenuItem deleteItem = new MenuItem("Delete");
-//        contextMenu.getItems().add(deleteItem);
-//
-//        listView.addEventHandler(ContextMenuEvent.CONTEXT_MENU_REQUESTED, event -> {
-//            contextMenu.show(listView, event.getScreenX(), event.getSceneY());
-//            event.consume();
-//        });
+
 
         listView.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
@@ -127,6 +136,56 @@ public class ControllerDashboard implements Initializable {
                 showAddUserDialog(listUser.getSelectionModel().getSelectedItem(), "Edit user");
             }
         });
+
+
+        FilteredList<User> filteredData = new FilteredList<>(userObservableList.sorted(), p -> true);
+        searchUser.textProperty().addListener((observable, oldValue, newValue)->{
+
+            filteredData.setPredicate(user -> {
+                if(newValue==null || newValue.isEmpty()){
+                    return true;
+                }
+                String lowerCaseFilter = newValue.toLowerCase();
+                if(String.valueOf(user.getNom()).contains(lowerCaseFilter)){
+                    return true;
+                }else if(user.getPrenom().toLowerCase().contains(lowerCaseFilter)){
+                    return  true;
+                }else if(user.getEmail().toLowerCase().contains(lowerCaseFilter)){
+                    return true;
+                }else if(user.getTelephone().toLowerCase().contains(lowerCaseFilter)){
+                    return true;
+                }else if(user.getAdresse().toLowerCase().contains(lowerCaseFilter)){
+                    return true;
+                }
+
+                return false;
+            });
+        });
+        SortedList<User> sortedList = new SortedList<>(filteredData);
+        listUser.setItems(sortedList);
+
+        FilteredList<Task> filteredTask = new FilteredList<>(taskObservableList.sorted(), p -> true);
+        searchTask.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredTask.setPredicate(task -> {
+                if(newValue==null || newValue.isEmpty()){
+                    return true;
+                }
+                String lowerCaseFilter = newValue.toLowerCase();
+                if(task.getNom().toLowerCase().contains(lowerCaseFilter)){
+                    return true;
+                }else if(task.getDescription().contains(lowerCaseFilter)){
+                    return true;
+                }else if(task.getDateDebut().toString().toLowerCase().contains(newValue)){
+                    return true;
+                }else if (task.getDateFin().toString().toLowerCase().contains(newValue)){
+                    return true;
+                }
+                return false;
+            });
+        });
+        SortedList<Task> sortedTask = new SortedList<>(filteredTask);
+        listView1.setItems(sortedTask);
+
         listView.setCellFactory(taskListView -> new TaskListViewCell());
         listView1.setCellFactory(taskListView -> new TaskListViewCell());
         listUser.setCellFactory(userListView -> new UserListViewCell());
