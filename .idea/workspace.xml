@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="717a728c-4686-4139-a362-fe373ba0ecc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Box_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_GPS_Antenna_64px_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Home_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Meanpath_64px_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Open_Envelope_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Person_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Search_52px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Sign_Out_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Slider__32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/icons8_Xbox_Menu_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/jimmy-fallon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/images/user_add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskAdd.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserAdd.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserItem.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/UserListViewCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/fullpackstyling.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/utils/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/tasklist.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/tasklist.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/database/dao/TaskDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/database/dao/TaskDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/database/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/database/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskList/xyz/alhdo/tasklist/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/MainContainer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/TaskDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/database/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="717a728c-4686-4139-a362-fe373ba0ecc5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,13 +98,13 @@
           <entry key="cell" value="40" />
           <entry key="css" value="135" />
           <entry key="fxml" value="46" />
-          <entry key="java" value="9002" />
+          <entry key="java" value="9033" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="135" />
-          <entry key="JAVA" value="9002" />
+          <entry key="JAVA" value="9033" />
           <entry key="Scratch" value="40" />
           <entry key="XML" value="46" />
         </counts>
@@ -227,11 +187,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="307">
+              <caret line="138" column="9" lean-forward="true" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#close#0;class#ControllerDashboard#0" />
@@ -255,11 +215,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+            <state relative-caret-position="1147">
+              <caret line="90" column="27" lean-forward="true" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -328,8 +288,8 @@
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/TaskListViewCell.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/view/Item.fxml" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/models/Task.java" />
-        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java" />
         <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java" />
+        <option value="$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java" />
       </list>
     </option>
   </component>
@@ -497,7 +457,7 @@
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543066960541" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543075714649" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/IFI/GLA/RestaurantMgtSampleUI" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -559,12 +519,12 @@
       <workItem from="1542775637616" duration="6048000" />
       <workItem from="1542950347255" duration="617000" />
       <workItem from="1542953673469" duration="22608000" />
-      <workItem from="1543054311819" duration="12128000" />
+      <workItem from="1543054311819" duration="13040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53363000" />
+    <option name="totallyTimeSpent" value="54275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="960" height="1053" extended-state="4" />
@@ -579,7 +539,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39234972" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39234972" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -587,7 +547,7 @@
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.34913296" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23606557" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23606557" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -834,25 +794,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1147">
+          <caret line="90" column="27" lean-forward="true" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/ControllerDashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="307">
+          <caret line="138" column="9" lean-forward="true" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#close#0;class#ControllerDashboard#0" />
             <element signature="method#showAddTaskDialog#0;class#ControllerDashboard#0" />
             <element signature="method#showAddUserDialog#0;class#ControllerDashboard#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/alhdo/tasklist/UI/controllers/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
