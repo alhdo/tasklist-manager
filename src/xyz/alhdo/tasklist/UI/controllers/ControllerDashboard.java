@@ -133,10 +133,17 @@ public class ControllerDashboard implements Initializable {
     }
 
     public void refresh(){
-        taskObservableList.removeAll();
-        taskObservableList.addAll(DaoFactory.getTaskDao().loadAll());
-        userObservableList.removeAll();
-        userObservableList.addAll(DaoFactory.getUserDao().loadAll());
+//        taskObservableList.removeAll();
+//        taskObservableList.addAll(DaoFactory.getTaskDao().loadAll());
+        listView.refresh();
+        listView1.refresh();
+
+    }
+    public void refreshUserList(){
+//        userObservableList.removeAll();
+        listUser.refresh();
+//        userObservableList.clear();
+//        userObservableList.addAll(DaoFactory.getUserDao().loadAll());
     }
 
     public void handleClicks(ActionEvent actionEvent) {

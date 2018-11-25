@@ -49,6 +49,15 @@ public class UserController {
 
     public void setUser(User user){
         this.user = user;
+        try {
+            fieldFirstname.setText(user.getPrenom());
+            fieldLastname.setText(user.getNom());
+            fieldAdress.setText(user.getAdresse());
+            fieldPhone.setText(user.getTelephone());
+            fieldEmail.setText(user.getEmail());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public void  setStage(Stage stage){
@@ -72,7 +81,10 @@ public class UserController {
         UserDao userDao = (UserDao) DaoFactory.getUserDao();
         if(userStage.getTitle().startsWith("Create")){
             userDao.create(user);
+        }else{
+            userDao.update(user);
         }
+        this.parentDashboard.refreshUserList();
         userStage.close();
     }
 }
