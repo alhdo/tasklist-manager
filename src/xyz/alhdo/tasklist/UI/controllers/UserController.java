@@ -1,6 +1,7 @@
 package xyz.alhdo.tasklist.UI.controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -27,6 +28,9 @@ public class UserController {
 
     @FXML
     private TextField fieldEmail;
+
+    @FXML
+    private Button userDeleteBtn;
 
     private Main main;
 
@@ -55,6 +59,9 @@ public class UserController {
             fieldAdress.setText(user.getAdresse());
             fieldPhone.setText(user.getTelephone());
             fieldEmail.setText(user.getEmail());
+            if(user.getNom()==null){
+                userDeleteBtn.setVisible(false);
+            }
         }catch (Exception e){
             e.printStackTrace();
         }

@@ -1,6 +1,7 @@
 package xyz.alhdo.tasklist.database.dao;
 
 import xyz.alhdo.tasklist.models.Task;
+import xyz.alhdo.tasklist.models.User;
 import xyz.alhdo.tasklist.utils.DateUtil;
 
 import java.sql.*;
@@ -52,12 +53,58 @@ public class TaskDao extends DAO<Task> {
 
     @Override
     public boolean delete(Task obj) {
-        return false;
+        try {
+            String query = "DELETE  FROM tasks WHERE id= ?";
+            PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+            preparedStatement.setInt(1, obj.getId());
+            preparedStatement.executeUpdate();
+
+            return true;
+        }catch (SQLException e){
+            e.printStackTrace();
+
+        }
+        return  false;
     }
 
     @Override
     public boolean update(Task obj) {
+        try {
+            String query = "UPDATE tasks set nom = ?, description = ?, datedebut = ?, datefin = ?, etat = ? where id = ?";
+            PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+            preparedStatement.setString(1,obj.getNom());
+            preparedStatement.setString(2, obj.getDescription());
+            preparedStatement.setDate(3 , DateUtil.transformUtilToSql(obj.getDateDebut()));
+            preparedStatement.setDate(4, DateUtil.transformUtilToSql(obj.getDateFin()));
+            preparedStatement.setInt(5, obj.getEtat());
+            preparedStatement.setInt(6, obj.getId());
+            preparedStatement.executeUpdate();
+            return true;
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
         return false;
+    }
+
+    public boolean assignToUser(Task task, User user){
+
+            // Here you insert in the midlle table
+            if(task!=null && user!=null){
+                try {
+                    String q = "INSERT INTO user_tasks (user_id, task_id) VALUES (?,?);";
+
+                    PreparedStatement pStat = this.connection.prepareStatement(q);
+
+                    pStat.setInt(1,user.getId());
+                    pStat.setInt(2, task.getId());
+                    pStat.execute();
+                    return true;
+                }catch (SQLException e){
+                    e.printStackTrace();
+                }
+            }
+            return false;
+
     }
 
     @Override
