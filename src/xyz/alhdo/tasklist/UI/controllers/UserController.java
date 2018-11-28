@@ -8,6 +8,8 @@ import xyz.alhdo.tasklist.database.dao.DaoFactory;
 import xyz.alhdo.tasklist.database.dao.UserDao;
 import xyz.alhdo.tasklist.models.User;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public class UserController {
@@ -101,8 +103,34 @@ public class UserController {
         }
 
     }
+    private boolean controlForm(){
+        boolean isOk = true;
+        List<String> errorMessage = new ArrayList<>();
+        if(fieldFirstname.getText()==null || fieldFirstname.getText().isEmpty()){
+            isOk = false;
+            errorMessage.add("Le champs Prenom est obligatoire");
+        }
+        if(fieldLastname.getText()==null || fieldLastname.getText().isEmpty()){
+            isOk = false;
+            errorMessage.add("Le champs Nom est obligatoire");
+        }
+        if(fieldEmail.getText()==null || fieldEmail.getText().isEmpty()){
+            isOk = false;
+            errorMessage.add("Le champs email est obligatoire");
+        }
+        if(!isOk){
+            Alert error = new Alert(Alert.AlertType.ERROR);
+            error.setTitle("Erreur !");
+            StringBuilder stringBuilder = new StringBuilder();
+            errorMessage.stream().forEach((x) -> stringBuilder.append("\n" + x));
+            error.setHeaderText(stringBuilder.toString());
+            error.showAndWait();
+        }
+        return isOk;
+    }
 
     @FXML public void save(){
+        if(controlForm()){
             if(user==null){
                 user = new User();
             }
@@ -111,13 +139,15 @@ public class UserController {
             user.setTelephone(fieldPhone.getText());
             user.setAdresse(fieldAdress.getText());
             user.setEmail(fieldEmail.getText());
-        UserDao userDao = (UserDao) DaoFactory.getUserDao();
-        if(userStage.getTitle().startsWith("Create")){
-            userDao.create(user);
-        }else{
-            userDao.update(user);
+            UserDao userDao = (UserDao) DaoFactory.getUserDao();
+            if(userStage.getTitle().startsWith("Create")){
+                userDao.create(user);
+            }else{
+                userDao.update(user);
+            }
+            this.parentDashboard.refreshUserList();
+            userStage.close();
         }
-        this.parentDashboard.refreshUserList();
-        userStage.close();
+
     }
 }

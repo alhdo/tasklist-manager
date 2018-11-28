@@ -13,6 +13,7 @@ import xyz.alhdo.tasklist.models.User;
 import xyz.alhdo.tasklist.utils.DateUtil;
 
 import java.time.ZoneId;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -107,6 +108,31 @@ public class TaskController {
         }
     }
 
+    private boolean controlForm(){
+        boolean isOk = true;
+        List<String> errorMessage = new ArrayList<>();
+        if(fieldName.getText()==null || fieldName.getText().isEmpty()){
+            isOk=false;
+            errorMessage.add("Le champs \"nom\" est obligatoire");
+        }
+        if(fieldDescription.getText()==null || fieldDescription.getText().isEmpty()){
+            isOk=false;
+            errorMessage.add("Le champs \"description\" est obligatoire");
+        }
+
+        if(fieldDateDebut.getValue()==null || fieldDateDebut.getValue().toString().isEmpty()){
+            isOk=false;
+            errorMessage.add("Le champs \"date debut \" est obligatoire");
+        }
+
+        if(fieldDateFin.getValue()==null || fieldDateFin.getValue().toString().isEmpty()){
+            isOk=false;
+            errorMessage.add("Le champs \"date fin \" est obligatoire");
+        }
+
+        return isOk;
+    }
+
 
 
     @FXML
@@ -115,6 +141,7 @@ public class TaskController {
     }
 
     public void save(){
+        if(controlForm()){
             if(task==null){
                 task = new Task();
             }
@@ -127,10 +154,12 @@ public class TaskController {
             task.setUser(user);
 
             if(dialogStage.getTitle().startsWith("Create")){
-            TaskDao taskDao = (TaskDao)  DaoFactory.getTaskDao();
-            taskDao.create(task);
+                TaskDao taskDao = (TaskDao)  DaoFactory.getTaskDao();
+                taskDao.create(task);
             }
             this.parentDashboard.refresh();
             dialogStage.close();
+        }
+
     }
 }
